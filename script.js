@@ -4,7 +4,6 @@ const PROXY_WORKER_URL = "https://cors.cepu.workers.dev/proxy";
 let playlist = [];
 let filteredPlaylist = [];
 
-// Instance global
 let plyrInstance = null;
 let shakaPlayerInstance = null;
 let hlsInstance = null;
@@ -25,7 +24,7 @@ const plyrShakaControls = [
 
 async function fetchExternalPlaylist() {
     try {
-        const response = await fetch('playlist.json');
+        const response = await fetch('assets/playlist.json');
         if (!response.ok) throw new Error('Respon file bermasalah.');
         playlist = await response.json();
         
@@ -605,7 +604,7 @@ async function resetAllPlayers() {
 async function closePlayer() {
     await resetAllPlayers();
     document.querySelector('.main-layout').classList.remove('shorts-portrait-mode');
-    document.getElementById('videoWrapper').innerHTML = `<img id="player-placeholder" src="assets/media/banner.png" style="width:100%;height:100%;object-fit:contain;background:#000;display:block;">`;
+    document.getElementById('videoWrapper').innerHTML = `<img id="player-placeholder" src="assets/banner.png" style="width:100%;height:100%;object-fit:contain;background:#000;display:block;">`;
     document.getElementById('serverSelector').style.display = "none";
     document.getElementById('episodeSelector').style.display = "none";
     document.querySelectorAll('.playlist-item').forEach(el => el.classList.remove('active'));
