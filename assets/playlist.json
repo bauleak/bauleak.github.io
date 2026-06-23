@@ -4,7 +4,7 @@
     "category": "ALL",
     "loop": "true",
     "type": "direct",
-    "url": [ { "link": "assets/media/1.mp4" }, { "link": "assets/media/2.mp4" }, { "link": "assets/media/3.mp4" }, { "link": "assets/media/4.mp4" } ]
+    "url": [ { "link": "assets/1.mp4" }, { "link": "assets/2.mp4" }, { "link": "assets/3.mp4" }, { "link": "assets/4.mp4" } ]
   },
   {
     "title": "RCTI",
