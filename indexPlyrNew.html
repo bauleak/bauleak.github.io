@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPLAY - Simple & Clean Streaming</title>
+      
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.11.2/shaka-player.compiled.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="visualPlyrNew.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">iPLAY</div>
+        
+        <div class="header-center">
+            <button class="mobile-search-btn" onclick="toggleMobileSearch()" title="Cari">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+            <div class="search-container" id="searchContainer">
+                <button class="mobile-search-close" onclick="toggleMobileSearch()"><i class="fa-solid fa-xmark"></i></button>
+                <input type="text" id="searchChannel" placeholder="Cari saluran atau film..." onkeyup="filterChannels()">
+                <i class="fa-solid fa-magnifying-glass search-icon-right"></i>
+            </div>
+            
+            <div class="category-wrapper" id="categoryContainer"></div>
+        </div>
+
+        <button class="gift-btn" onclick="toggleQris(true)" title="Dukung Kami / Donasi">
+            <i class="fa-solid fa-gift"></i>
+        </button>
+    </header>
+
+    <div class="main-layout">
+        <div class="player-section">
+            <div class="video-container" id="videoWrapper"></div>
+        </div>
+
+        <div class="playlist-section">
+            <div class="playlist-header-container">
+                <div class="playlist-title">Playlist</div>
+                <div class="player-controls-right">
+                    <select class="server-select" id="episodeSelector" onchange="switchEpisode()" style="display:none;"></select>
+                    <select class="server-select" id="serverSelector" onchange="switchServer()" style="display:none;"></select>
+                    <button class="close-player-btn" onclick="closePlayer()" title="Tutup Player"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            
+            <div class="playlist-items" id="playlistContainer"></div>
+        </div>
+    </div>
+
+    <div class="qris-overlay" id="qrisOverlay" onclick="toggleQris(false)">
+        <div class="qris-container">
+            <img class="qris-image" src="assets/media/qris.webp" alt="QRIS Donasi">
+        </div>
+    </div>
+
+    <script src="scriptPlyrNew.js"></script>
+</body>
+</html>
