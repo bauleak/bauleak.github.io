@@ -32,14 +32,8 @@ async function fetchExternalPlaylist() {
         renderCategoryTabs();
         filterChannels(); 
 
-        // AUTOPLAY PLAYLIST PERTAMA
         setTimeout(() => {
-            const firstChannel = document.querySelector('.playlist-item');
-            if(firstChannel) {
-                firstChannel.click();
-            } else {
-                playVideo(0);
-            }
+            document.getElementById('videoWrapper').innerHTML = `<img id="player-placeholder" src="assets/banner.png" style="width:100%;height:100%;object-fit:contain;background:#000;display:block;">`;
         }, 300);
 
         const unmuteOnInteraction = () => {
@@ -81,7 +75,6 @@ function renderCategoryTabs() {
         select.onchange = (e) => {
             currentCategory = e.target.value;
             filterChannels();
-            toggleNavButtons();
         };
 
         categories.forEach(cat => {
@@ -101,13 +94,11 @@ function renderCategoryTabs() {
                 currentCategory = cat;
                 document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                filterChannels(); 
-                toggleNavButtons();
+                filterChannels();
             };
             tabContainer.appendChild(btn);
         });
     }
-    toggleNavButtons();
 }
 
 function toggleMobileSearch() {
@@ -121,20 +112,6 @@ function toggleMobileSearch() {
         } else {
             document.getElementById('searchChannel').value = "";
             filterChannels();
-        }
-    }
-}
-
-function toggleNavButtons() {
-    const prevBtn = document.getElementById('prevButton');
-    const nextBtn = document.getElementById('nextButton');
-    if (prevBtn && nextBtn) {
-        if (currentCategory === "SHORTS") {
-            prevBtn.style.display = "inline-block";
-            nextBtn.style.display = "inline-block";
-        } else {
-            prevBtn.style.display = "none";
-            nextBtn.style.display = "none";
         }
     }
 }
@@ -327,9 +304,25 @@ async function executeCorePlay() {
     const mainLayout = document.querySelector('.main-layout');
     
     await resetAllPlayers();
-    wrapper.innerHTML = ""; 
-
+    wrapper.innerHTML = "";
+    
     if (!item) return;
+    
+    const closeBtn = document.querySelector('.close-player-btn');
+    if (closeBtn) closeBtn.style.display = 'flex'; 
+
+    const prevBtn = document.getElementById('prevButton');
+    const nextBtn = document.getElementById('nextButton');
+    if (prevBtn && nextBtn) {
+    	const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+        if (item.category && item.category.toUpperCase() === "SHORTS" && isPortrait) {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        } else {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
+    }
     
     if (item.category && item.category.toUpperCase() === "SHORTS") {
         mainLayout.classList.add('shorts-portrait-mode');
@@ -400,14 +393,21 @@ async function executeCorePlay() {
                 },
                 events: {
                     'onStateChange': (event) => {
-                        if (event.data === window.YT.PlayerState.ENDED && isLoopActive) {
-                            console.log("[YouTube Engine] Video selesai, memicu loop berikutnya...");
-                            moveToNextServer();
+                        if (event.data === window.YT.PlayerState.ENDED) {
+                            console.log("[YouTube Engine] Video selesai diputar.");
+                            if (currentCategory === "SHORTS" || (item.category && item.category.toUpperCase() === "SHORTS")) {
+                                nextEpisodeOrChannel();
+                            } 
+                            else if (isLoopActive) {
+                                moveToNextServer();
+                            }
                         }
                     },
                     'onError': (event) => {
-                        if (isLoopActive) {
-                            console.log("[YouTube Engine] Error terdeteksi, skip...");
+                        console.log("[YouTube Engine] Error terdeteksi.");
+                        if (currentCategory === "SHORTS" || (item.category && item.category.toUpperCase() === "SHORTS")) {
+                            nextEpisodeOrChannel();
+                        } else if (isLoopActive) {
                             moveToNextServer();
                         }
                     }
@@ -526,11 +526,26 @@ async function executeCorePlay() {
                 }
             });
 
-            if (isLoopActive) videoElement.addEventListener('ended', () => moveToNextServer());
+            if (isLoopActive) {
+                videoElement.addEventListener('ended', () => {
+                    if (item.category && item.category.toUpperCase() === "SHORTS") {
+                        nextEpisodeOrChannel();
+                    } else {
+                        moveToNextServer();
+                    }
+                });
+            }
         } catch (error) {
             console.error("Shaka Error:", error.code);
-            if (isLoopActive) moveToNextServer();
-            else wrapper.innerHTML = `<div style="text-align:center; color:#ff3b30; padding:30px;">Playback Error (${error.code})</div>`;
+            if (isLoopActive) {
+                if (item.category && item.category.toUpperCase() === "SHORTS") {
+                    nextEpisodeOrChannel();
+                } else {
+                    moveToNextServer();
+                }
+            } else {
+                wrapper.innerHTML = `<div style="text-align:center; color:#ff3b30; padding:30px;">Playback Error (${error.code})</div>`;
+            }
         }
         return;
     }
@@ -581,13 +596,37 @@ async function executeCorePlay() {
                 });
             });
 
-            if (isLoopActive) videoElement.addEventListener('ended', () => moveToNextServer());
-            hlsInstance.on(Hls.Events.ERROR, (e, data) => { if (data.fatal && isLoopActive) moveToNextServer(); });
+            if (isLoopActive) {
+                videoElement.addEventListener('ended', () => {
+                    if (item.category && item.category.toUpperCase() === "SHORTS") {
+                        nextEpisodeOrChannel();
+                    } else {
+                        moveToNextServer();
+                    }
+                });
+            }
+            hlsInstance.on(Hls.Events.ERROR, (e, data) => { 
+                if (data.fatal && isLoopActive) {
+                    if (item.category && item.category.toUpperCase() === "SHORTS") {
+                        nextEpisodeOrChannel();
+                    } else {
+                        moveToNextServer();
+                    }
+                } 
+            });
         } 
         else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
             videoElement.src = finalUrl;
             plyrInstance = new Plyr(videoElement, { controls: plyrDefaultControls, autoplay: true });
-            if (isLoopActive) videoElement.addEventListener('ended', () => moveToNextServer());
+            if (isLoopActive) {
+                videoElement.addEventListener('ended', () => {
+                    if (item.category && item.category.toUpperCase() === "SHORTS") {
+                        nextEpisodeOrChannel();
+                    } else {
+                        moveToNextServer();
+                    }
+                });
+            }
         }
         return;
     }
@@ -596,8 +635,24 @@ async function executeCorePlay() {
     videoElement.src = finalUrl;
     plyrInstance = new Plyr(videoElement, { controls: plyrDefaultControls, autoplay: true });
     
-    if (isLoopActive) videoElement.addEventListener('ended', () => moveToNextServer());
-    videoElement.addEventListener('error', () => { if (isLoopActive) moveToNextServer(); });
+    if (isLoopActive) {
+        videoElement.addEventListener('ended', () => {
+            if (item.category && item.category.toUpperCase() === "SHORTS") {
+                nextEpisodeOrChannel();
+            } else {
+                moveToNextServer();
+            }
+        });
+    }
+    videoElement.addEventListener('error', () => { 
+        if (isLoopActive) {
+            if (item.category && item.category.toUpperCase() === "SHORTS") {
+                nextEpisodeOrChannel();
+            } else {
+                moveToNextServer();
+            }
+        } 
+    });
 }
 
 function updateHlsQuality(newQuality) {
@@ -644,11 +699,32 @@ function initOrientationHandler() {
                 try { screen.orientation.unlock(); } catch(e){} 
             }
         }
+
+        const item = filteredPlaylist[currentActiveIndex];
+        const prevBtn = document.getElementById('prevButton');
+        const nextBtn = document.getElementById('nextButton');
+        
+        const isVideoPlaying = document.querySelector('.close-player-btn') && document.querySelector('.close-player-btn').style.display === 'flex';
+
+        if (prevBtn && nextBtn && item && isVideoPlaying) {
+            const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+            
+            if (item.category && item.category.toUpperCase() === "SHORTS" && isPortrait) {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+        }
     };
+
     document.addEventListener('fullscreenchange', handleOrientation);
     document.addEventListener('webkitfullscreenchange', handleOrientation);
     document.addEventListener('mozfullscreenchange', handleOrientation);
     document.addEventListener('MSFullscreenChange', handleOrientation);
+
+    window.matchMedia("(orientation: portrait)").addEventListener("change", handleOrientation);
 }
 
 async function resetAllPlayers() {
@@ -664,6 +740,12 @@ async function closePlayer() {
     document.getElementById('videoWrapper').innerHTML = `<img id="player-placeholder" src="assets/banner.png" style="width:100%;height:100%;object-fit:contain;background:#000;display:block;">`;
     document.getElementById('serverSelector').style.display = "none";
     document.getElementById('episodeSelector').style.display = "none";
+    const closeBtn = document.querySelector('.close-player-btn');
+    if (closeBtn) closeBtn.style.display = 'none';
+    const prevBtn = document.getElementById('prevButton');
+    if (prevBtn) prevBtn.style.display = 'none';
+    const nextBtn = document.getElementById('nextButton');
+    if (nextBtn) nextBtn.style.display = 'none';
     document.querySelectorAll('.playlist-item').forEach(el => el.classList.remove('active'));
 }
 

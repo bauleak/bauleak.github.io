@@ -318,7 +318,7 @@ video, iframe, .plyr video {
     font-weight: 700;
     cursor: pointer;
     height: 32px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s, transform 0.1s;
@@ -343,7 +343,7 @@ video, iframe, .plyr video {
     font-weight: 700;
     cursor: pointer;
     height: 32px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s, transform 0.1s;
@@ -368,7 +368,7 @@ video, iframe, .plyr video {
     font-weight: 700;
     cursor: pointer;
     height: 32px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s, transform 0.1s;
