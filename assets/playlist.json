@@ -1,6 +1,6 @@
 [
   {
-    "title": "STOP JUDI",
+    "title": "Stop Judi",
     "category": "ALL",
     "loop": "true",
     "type": "direct",
@@ -150,7 +150,7 @@
     "title": "MDTV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "http://op-group1-swiftservesd-1.dens.tv/h/h06/01.m3u8" },
+      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h223/02.m3u8" },
       {
         "type": "dash",
         "link": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/3aefa03d32954b678e5faab6daa04b58/index.mpd",
@@ -172,7 +172,7 @@
     "title": "Metro TV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "http://op-group1-swiftservehd-1.dens.tv/h/h12/01.m3u8" },
+      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h12/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/AUE5iHINUIw" }
     ]
   },
@@ -672,10 +672,16 @@
     ]
   },
   {
+    "title": "JAKTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://live-01-digdaya.dens.tv/e6550891-6bef-42e1-bab9-13bf4af739ce/v1/stream.m3u8"
+  },
+  {
     "title": "Channel Jowo",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h77/S4/mnf.m3u8"
+    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h208/02.m3u8"
   },
   {
     "title": "Stara TV",
@@ -819,6 +825,8 @@
       { "serverName": "Toko Kramat - Bedak Pemikat Jiwa", "link": "https://m.youtube.com/watch?v=JE8yBezKUEk" }
     ]
   },
+  { "title": "Kafir : Gerbang Sukma", "category": "FILM", "type": "hls", "url": "https://bun.p2pplay.pro/hls/ZDcE4LKSl4hdavf-nnIVRg/luy/yg6kb1wc/mje9jv/tt/master.m3u8", "ua": "Mozilla/5.0" },
+  { "title": "Pemuja", "category": "FILM", "type": "hls", "url": "https://ewa.playerp2p.live/hls/4wr50WV2rImdfo698PUJ9g/xq/ojqwdpsm/mjeqk5/tt/master.m3u8", "ua": "Mozilla/5.0" },
   { "title": "Menunggu Bunda", "category": "FILM", "type": "embed", "url": "https://www.dailymotion.com/embed/video/xafr7hi" },
   { "title": "Halalkan Atau Tinggalkan", "category": "FILM", "type": "youtube", "url": "https://youtu.be/2r-MU1o1R8U" },
   { "title": "Cinta Tak Pernah Tepat Waktu", "category": "FILM", "type": "youtube", "url": "https://youtu.be/tmsWpHlR3dc" },
@@ -933,6 +941,7 @@
   { "title": "You, Me & Tuscany", "category": "FILM", "type": "direct", "url": "https://scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZz0/TVVacFkwVlRhMDlTWm5ob2ExcHpURUpQWlVVMmRXMVVWVmh2VUdwdVgxRmk/original"},
   { "title": "Ladies First", "category": "FILM", "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVhjMFpWQlZZbVpuV0hKa1dVaEVNblpSZDBWdVpFbGxUVVpJZEhSclJVRTQ/original" },
   { "title": "Over Your Dead Body", "category": "FILM", "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVhWWE16aHBUbGR6WnkweFVrRmZla0UyYVVaMVJtYzVWbEZaWTFWemFrUjE/original" },
+  { "title": "Hana Korea", "category": "FILM", "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVhsTFJWRTBaVlZ1WVMweFRITTViMHhFV1ZocGVEQlBTRGczVm1WaVlXeGw/original" },
   { "title": "Crush Kong Curly", "category": "SEMI", "type": "hls", "url": "https://edo.p2pstream.vip/hls/ORKXYobuH_jXZZtH3kbr5A/3vi/zbxp1xs3/huyh5n/tt/master.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" },
   { "title": "Halina Ni Aliya", "category": "SEMI", "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVZoSGJIQmlWMjUyZWpCSVNqWkxRVWhHYVdOeFR6RXhMV053VmpSNVluWmg/original" },
   { "title": "Sex Trip", "category": "SEMI", "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVhwRlp6aG9kVzV1VFhwV1ZWTkhlWEpxUVVKRFUwRmlNak5JUWxjeWFtdGY/original" },
@@ -1497,6 +1506,32 @@
       { "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVhsbmFHdGZibmN3UVY5QmFEUmhSbVJVU3kxRmFEUktjMnQ1TFVwblIzVnU/original" },
       { "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVZOUlFtTkdkSHBwWjNBMGVHOVNaR0pzUWtaUFJ5MWllVmxQT1dGMFdrSjM/original" },
       { "type": "direct", "url": "https://cdn.scroll.web.id/file/TUdJeU5qZzVNREV5TmpZNFpqTmtORFl3T1dRMFptUmlOekEwT1RnMlpUZw/TVROMk0zRkhSazAyVGxNeVkyY3RkMHQxVVZCblEydHRiRkpVWDJKb1ZVMXI/original" }
+    ]
+  },
+  {
+    "title": "18 Again",
+    "category": "SERIES",
+    "loop": "true",
+    "type": "hls",
+    "referer": "https://www.vidio.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "episodes": [
+      { "url": "https://api.vidio.com/videos/2035588/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2035589/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2051981/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2051982/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2051983/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2051984/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056838/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056839/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056840/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056841/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056954/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056844/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056845/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2056847/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2067325/common_tokenized_playlist.m3u8" },
+      { "url": "https://api.vidio.com/videos/2067326/common_tokenized_playlist.m3u8" }
     ]
   },
   {
@@ -2250,6 +2285,33 @@
       { "link": "https://v.imgstream2.com/h/phcaifctce/phcaifctce.m3u8" }
     ]
   },
+  { "title": "Benci Jadi Bucin", "category": "SHORTS", "loop": "true", "type": "hls", "referer": "https://www.rctiplus.com/", "ua": "Mozilla/5.0", "episodes": [
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_01/fp8ntnxsQlSoPhJ73ClamA.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_02/czV7V5QQTGS3P3HoNnm-OQ.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_03/IePdNDV6SPu_JGQjtYVhQA.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_04/OQvC6OmyS-ezHQM-RQYWeQ.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_05/BAOo8Vu4Qpu2CbXK4_u_Yg.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_06/A5py5JjJRXWyIGK_UMVzQA.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_07/EicRldXYRoy_sfhtnQGKag.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_08/DpxR0dZgShK8zY4WXRFUkQ.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_09/83zBR6azQqWHTAljG4I3RQ.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_10/3Go0xIiYQYqoUgcFnJH4Ug.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_11/L-Dpvmm3TmWSl_vGU6ztug.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_12/ZHQx32jmRa6e780-iRVCjg.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_13/CQo5Y3OnRhWTYP7DychdOQ.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_14/QRnokh2YS5SLHPNKH9AxJA.m3u8" },
+    { "url": "https://short-vod2.rctiplus.id/prod/output/2025/06/ss_benci_jadi_bucin_eps_15/Yk4U6hMNRWqjqgs05wp2hA.m3u8" } ] },
+  { "title": "Rekaman Cinta Terlarang", "category": "SHORTS", "loop": "true", "type": "hls", "referer": "https://www.vidio.com/", "ua": "Mozilla/5.0", "episodes": [
+    { "url": "https://api.vidio.com/videos/8394159/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394160/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394161/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394162/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394163/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394164/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394165/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394166/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394167/common_tokenized_playlist.m3u8" },
+    { "url": "https://api.vidio.com/videos/8394168/common_tokenized_playlist.m3u8" } ] },
   { "title": "Musuh Tapi Jadian", "category": "SHORTS", "loop": "true", "type": "hls", "referer": "https://www.vidio.com/", "ua": "Mozilla/5.0", "episodes": [
     { "url": "https://api.vidio.com/videos/8945978/common_tokenized_playlist.m3u8" },
     { "url": "https://api.vidio.com/videos/8945979/common_tokenized_playlist.m3u8" },
@@ -2290,25 +2352,25 @@
   { "title": "Kepala Desainer Nasional", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=LuHBCrbzIbw" },
   { "title": "Kebangkitan Sang Jenderal Wanita", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=3HEq2Z96pnM" },
   { "title": "Penguasa Baru Longmen", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=6UThhT3I15A" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
-  { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
+  { "title": "Menaklukkan Laut Dalam", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=Ec8HFP8n8oA" },
+  { "title": "Koki Jenius Bangkit Kembali", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=0WZ5cBBo_5A" },
+  { "title": "Dia Mengusir Pewaris Miliarder", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=U50Kw_1KVNs" },
+  { "title": "Pahlawan Super Bangkit", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=RgFFJTGkM_0" },
+  { "title": "Kakak Berkuasa Dunia", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=GPWwakA_2vo" },
+  { "title": "Pengkhianatan Ruang Bersalin", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=0O5trSUs8bQ" },
+  { "title": "Ibu Menjadi Teman Sekelas", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=NaBeSk6Ds2E" },
+  { "title": "Juara Papan Atas Surga", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=NYn-QHYjcDQ" },
+  { "title": "Kembalinya Sang Tuan Muda", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=FKvd8oMTvY0" },
+  { "title": "Jebakan Cinta Palsu", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=7af6easiwYk" },
+  { "title": "Anakku Diculik", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=kQvVzof0DfI" },
+  { "title": "Pendekar Suci Bangkit", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=7SFfykjBQXY" },
+  { "title": "Pacar Sewaan Tajir", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=B-0rwWK4X1k" },
+  { "title": "Jangan Usik Dia, Dia Bisa Gila", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=T2q0ak2y3mI" },
+  { "title": "Dendam Yang Membara", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=WYpfGX75UTw" },
+  { "title": "Cadar Terbuka, Sang Kuat Kembali", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=uzGyXsRgofo" },
+  { "title": "Menantu Kaya Bangkit", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=tLX923vfcM8" },
+  { "title": "Dijebak? Lawan Balik!", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=HbNH6yevvD0" },
+  { "title": "Dewa Terhebat Beraksi", "category": "SHORTS", "type": "youtube", "url": "https://m.youtube.com/watch?v=0zZPEFLD8lM" },
   { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
   { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
   { "title": "", "category": "SHORTS", "type": "youtube", "url": "" },
