@@ -4,6 +4,7 @@ const PROXY_WORKER_URL = "https://cors.cepu.workers.dev/proxy";
 let playlist = [];
 let filteredPlaylist = [];
 
+// Instance global
 let plyrInstance = null;
 let shakaPlayerInstance = null;
 let hlsInstance = null;
@@ -80,6 +81,7 @@ function renderCategoryTabs() {
         select.onchange = (e) => {
             currentCategory = e.target.value;
             filterChannels();
+            toggleNavButtons();
         };
 
         categories.forEach(cat => {
@@ -100,10 +102,12 @@ function renderCategoryTabs() {
                 document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 filterChannels(); 
+                toggleNavButtons();
             };
             tabContainer.appendChild(btn);
         });
     }
+    toggleNavButtons();
 }
 
 function toggleMobileSearch() {
@@ -117,6 +121,20 @@ function toggleMobileSearch() {
         } else {
             document.getElementById('searchChannel').value = "";
             filterChannels();
+        }
+    }
+}
+
+function toggleNavButtons() {
+    const prevBtn = document.getElementById('prevButton');
+    const nextBtn = document.getElementById('nextButton');
+    if (prevBtn && nextBtn) {
+        if (currentCategory === "SHORTS") {
+            prevBtn.style.display = "inline-block";
+            nextBtn.style.display = "inline-block";
+        } else {
+            prevBtn.style.display = "none";
+            nextBtn.style.display = "none";
         }
     }
 }
@@ -227,6 +245,45 @@ function switchServer() {
     executeCorePlay();
 }
 
+function nextEpisodeOrChannel() {
+    if (!filteredPlaylist.length) return;
+    const item = filteredPlaylist[currentActiveIndex];
+    const isSeries = (item && (item.category === "SERIES" || item.category === "ANIME" || item.category === "SHORTS") && item.episodes && item.episodes.length > 0);
+
+    if (isSeries && (currentEpisodeIndex + 1 < item.episodes.length)) {
+        currentEpisodeIndex++;
+        currentServerIndex = 0;
+        playVideo(currentActiveIndex);
+    } else {
+        nextChannel();
+    }
+}
+
+function prevEpisodeOrChannel() {
+    if (!filteredPlaylist.length) return;
+    const item = filteredPlaylist[currentActiveIndex];
+    const isSeries = (item && (item.category === "SERIES" || item.category === "ANIME" || item.category === "SHORTS") && item.episodes && item.episodes.length > 0);
+
+    if (isSeries && (currentEpisodeIndex - 1 >= 0)) {
+        currentEpisodeIndex--;
+        currentServerIndex = 0;
+        playVideo(currentActiveIndex);
+    } else {
+        let prevIndex = (currentActiveIndex - 1 + filteredPlaylist.length) % filteredPlaylist.length;
+        const prevItem = filteredPlaylist[prevIndex];
+        const isPrevSeries = (prevItem && (prevItem.category === "SERIES" || prevItem.category === "ANIME" || prevItem.category === "SHORTS") && prevItem.episodes && prevItem.episodes.length > 0);
+        
+        currentServerIndex = 0;
+        if (isPrevSeries) {
+            currentEpisodeIndex = prevItem.episodes.length - 1; // Mulai dari episode terakhir channel sebelumnya
+        } else {
+            currentEpisodeIndex = 0;
+        }
+        playVideo(prevIndex);
+        updateActivePlaylistItem(prevIndex);
+    }
+}
+
 function toggleQris(show) {
     const overlay = document.getElementById('qrisOverlay');
     if (show) overlay.classList.add('show');
@@ -274,7 +331,6 @@ async function executeCorePlay() {
 
     if (!item) return;
     
-    // Tambahkan Logika Handler Player Vertikal Shorts di Mode Portrait
     if (item.category && item.category.toUpperCase() === "SHORTS") {
         mainLayout.classList.add('shorts-portrait-mode');
     } else {
@@ -336,6 +392,7 @@ async function executeCorePlay() {
                     'autoplay': 1,
                     'muted': !isUserInteracted,
                     'controls': 1,
+                    'modestbranding': 1,
                     'rel': 0,
                     'showinfo': 0,
                     'iv_load_policy': 3,
@@ -381,7 +438,7 @@ async function executeCorePlay() {
         return;
     }
 
-    // SIAPKAN STRUKTUR UTAMA ELEMEN <VIDEO>
+    // STRUKTUR UTAMA ELEMEN <VIDEO>
     const videoMute = isUserInteracted ? "" : "muted";
     wrapper.innerHTML = `<video id="plyrPlayer" class="plyr" playsinline autoplay ${videoMute}></video>`;
     const videoElement = document.getElementById('plyrPlayer');
@@ -412,7 +469,7 @@ async function executeCorePlay() {
                     const licProxy = new URLSearchParams();
                     licProxy.append('url', licenseUrl);
                     if (referer) licProxy.append('referer', referer);
-                    if (ua) licProxy.append('ua', ua);
+                    if (ua) proxyParams.append('ua', ua);
                     licenseUrl = `${PROXY_WORKER_URL}?${licProxy.toString()}`;
                 }
                 shakaConfig.drm = { servers: { 'com.widevine.alpha': licenseUrl } };
@@ -518,8 +575,8 @@ async function executeCorePlay() {
                         onChange: (e) => updateHlsQuality(e)
                     },
                     i18n: { 
-                    	quality: 'Resolusi',
-                    	qualityLabel: { 0: 'Auto' }
+                        quality: 'Resolusi',
+                        qualityLabel: { 0: 'Auto' }
                     }
                 });
             });
@@ -609,3 +666,40 @@ async function closePlayer() {
     document.getElementById('episodeSelector').style.display = "none";
     document.querySelectorAll('.playlist-item').forEach(el => el.classList.remove('active'));
 }
+
+function nextChannel() {
+    if (!filteredPlaylist.length) return;
+    let nextIndex = (currentActiveIndex + 1) % filteredPlaylist.length;
+    currentEpisodeIndex = 0;
+    currentServerIndex = 0;
+    playVideo(nextIndex);
+    updateActivePlaylistItem(nextIndex);
+}
+
+function prevChannel() {
+    if (!filteredPlaylist.length) return;
+    let prevIndex = (currentActiveIndex - 1 + filteredPlaylist.length) % filteredPlaylist.length;
+    currentEpisodeIndex = 0;
+    currentServerIndex = 0;
+    playVideo(prevIndex);
+    updateActivePlaylistItem(prevIndex);
+}
+
+function updateActivePlaylistItem(index) {
+    document.querySelectorAll('.playlist-item').forEach(el => el.classList.remove('active'));
+    const el = document.querySelectorAll('.playlist-item')[index];
+    if (el) el.classList.add('active');
+}
+
+let touchStartY = 0;
+document.getElementById('videoWrapper').addEventListener('touchstart', e => {
+    if (currentCategory !== "SHORTS") return;
+    touchStartY = e.touches[0].clientY;
+});
+
+document.getElementById('videoWrapper').addEventListener('touchend', e => {
+    if (currentCategory !== "SHORTS") return;
+    let dy = e.changedTouches[0].clientY - touchStartY;
+    if (dy < -60) nextEpisodeOrChannel();
+    if (dy > 60) prevEpisodeOrChannel();
+});

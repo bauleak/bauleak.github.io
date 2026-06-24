@@ -25,7 +25,7 @@ body {
     font-family: 'Inter', sans-serif;
     height: 100vh;
     width: 100vw;
-    overflow-y: auto; 
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 }
@@ -333,6 +333,56 @@ video, iframe, .plyr video {
     transform: scale(0.95);
 }
 
+.prev-btn {
+    background-color: var(--iplay-green);
+    color: #ffffff;
+    border: none;
+    padding: 0 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.prev-btn:hover {
+    background-color: var(--iplay-green);
+    transform: scale(1.05);
+}
+
+.prev-btn:active {
+    transform: scale(0.95);
+}
+
+.next-btn {
+    background-color: var(--iplay-green);
+    color: #ffffff;
+    border: none;
+    padding: 0 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.next-btn:hover {
+    background-color: var(--iplay-green);
+    transform: scale(1.05);
+}
+
+.next-btn:active {
+    transform: scale(0.95);
+}
+
 .playlist-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -548,6 +598,9 @@ video, iframe, .plyr video {
         overflow-y: auto !important;
         font-size: 12px !important;
     }
+    .server-select {
+        max-width: 120px;
+    }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -557,7 +610,7 @@ video, iframe, .plyr video {
         font-size: 12px !important;
     }
     .server-select {
-        max-width: 75px;
+        max-width: 80px;
     }
     .playlist-section {
         max-height: 315px;
@@ -595,10 +648,28 @@ video, iframe, .plyr video {
         justify-content: center;
     }
     .main-layout.shorts-portrait-mode .video-container {
-        aspect-ratio: 14/16 !important;
+        aspect-ratio: 9/16 !important;
         width: 100%;
-        max-width: 400px;
-        max-height: calc(80vh - var(--header-height));
+        height: 100%;
         margin: 0 auto;
+    }
+    .main-layout.shorts-portrait-mode .playlist-section {
+        flex: none;
+        width: auto;
+        height: auto;
+        border-top: none;
+        border-radius: 6px;
+        padding: 0;
+        background-color: var(--bg-dark);
+    }
+    .main-layout.shorts-portrait-mode .playlist-header-container {
+        margin: 0;
+        padding: 0;
+    }
+    .main-layout.shorts-portrait-mode .playlist-items {
+        display: none;
+    }
+    .main-layout.shorts-portrait-mode .playlist-title {
+        display: none;
     }
 }

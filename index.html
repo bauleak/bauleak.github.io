@@ -48,6 +48,8 @@
             <div class="playlist-header-container">
                 <div class="playlist-title">Playlist</div>
                 <div class="player-controls-right">
+                    <button class="prev-btn" id="prevButton" onclick="prevEpisodeOrChannel()" title="Video Sebelumnya"><i class="fa-solid fa-less-than"></i></button>
+                    <button class="next-btn" id="nextButton" onclick="nextEpisodeOrChannel()" title="Video Selanjutnya"><i class="fa-solid fa-greater-than"></i></button>
                     <select class="server-select" id="episodeSelector" onchange="switchEpisode()" style="display:none;"></select>
                     <select class="server-select" id="serverSelector" onchange="switchServer()" style="display:none;"></select>
                     <button class="close-player-btn" onclick="closePlayer()" title="Tutup Player"><i class="fa-solid fa-xmark"></i></button>
