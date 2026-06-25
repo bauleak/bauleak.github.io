@@ -267,7 +267,7 @@
     "title": "Bali TV",
     "category": "LIVE",
     "type": "embed",
-    "url": "https://player.twitch.tv/?channel=balitvnaradha&parent=localhost&autoplay=true"
+    "url": "https://player.twitch.tv/?channel=balitvnaradha&parent=bauleak.github.io&autoplay=true"
   },
   {
     "title": "Garuda TV",
@@ -492,7 +492,7 @@
     "title": "Padang TV",
     "category": "LIVE",
     "type": "embed",
-    "url": "https://player.twitch.tv/?channel=padang_tv&parent=localhost&autoplay=true"
+    "url": "https://player.twitch.tv/?channel=padang_tv&parent=bauleak.github.io&autoplay=true"
   },
   {
     "title": "Palembang TV",
@@ -639,7 +639,7 @@
     "title": "Pijar TV",
     "category": "LIVE",
     "type": "embed",
-    "url": "https://player.twitch.tv/?channel=pijartv&parent=localhost&autoplay=true"
+    "url": "https://player.twitch.tv/?channel=pijartv&parent=bauleak.github.io&autoplay=true"
   },
   {
     "title": "Dhamma TV",
