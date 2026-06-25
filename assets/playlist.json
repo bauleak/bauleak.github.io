@@ -221,6 +221,7 @@
   {
     "title": "Kompas TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h234/02.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/DOOrIxw5xOw" }
@@ -229,6 +230,7 @@
   {
     "title": "Metro TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h12/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/AUE5iHINUIw" }
@@ -237,6 +239,7 @@
   {
     "title": "TVOne",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h40/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/yNKvkPJl-tg" }
@@ -279,6 +282,7 @@
   {
     "title": "Magna TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h24/01.m3u8" },
       { "type": "hls", "link": "https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8" }
@@ -287,6 +291,7 @@
   {
     "title": "Nusantara TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h37/01.m3u8" },
       { "type": "hls", "link": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8" }
@@ -302,16 +307,10 @@
   {
     "title": "BTV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h210/02.m3u8" },
       { "type": "hls", "link": "https://lnd0t3b922.tenbytecdn.com/ta-sg1/90369cf5-6ac2-411d-b3d0-15fae10a2e2c/master.m3u8" }
-    ]
-  },
-  {
-    "title": "Beritasatu",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h209/02.m3u8" }
     ]
   },
   {
@@ -362,6 +361,7 @@
   {
     "title": "JAKTV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h218/02.m3u8" },
       { "type": "hls", "link": "https://live-01-digdaya.dens.tv/e6550891-6bef-42e1-bab9-13bf4af739ce/v1/stream.m3u8" }
@@ -509,6 +509,7 @@
   {
     "title": "DAAI TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h16/01.m3u8" },
       { "type": "hls", "link": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8" }
@@ -517,6 +518,7 @@
   {
     "title": "Rodja TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h233/02.m3u8" },
       { "type": "hls", "link": "https://rodjatv.com/rodjatv/live.m3u8" }
@@ -537,6 +539,7 @@
   {
     "title": "Mekkah TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h15/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/m9-Umj3aL1I" }
@@ -545,6 +548,7 @@
   {
     "title": "Madinah TV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h38/01.m3u8" },
       { "type": "hls", "link": "https://win.holol.com/live/sunnah/chunklist_w1511531636.m3u8" },
@@ -662,6 +666,7 @@
   {
     "title": "Al Jazeera",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h143/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8" },
@@ -671,6 +676,7 @@
   {
     "title": "Astro Awani",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/index_3.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/mkVyNaGee8A" }
@@ -679,6 +685,7 @@
   {
     "title": "CNA",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h29/01.m3u8" },
       { "type": "hls", "link": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8" },
@@ -688,6 +695,7 @@
   {
     "title": "Arirang",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://amdlive-ch04-ctnd-com.akamaized.net/arirang_4ch/smil:arirang_4ch.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" },
       { "type": "youtube", "link": "https://www.youtube.com/live/CJVBX7KI5nU" }
@@ -703,6 +711,7 @@
   {
     "title": "NHK World Japan",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h23/01.m3u8" },
       { "type": "hls", "link": "https://production-nhk-vidio-com.akamaized.net/00489ab02a9d71cc/wXfEzh7gCnHgIYYY/cfc0a62dTe93673d.m3u8" }
@@ -720,6 +729,7 @@
   {
     "title": "TRT World",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h156/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://tv-trtworld.medya.trt.com.tr/master.m3u8" },
@@ -729,6 +739,7 @@
   {
     "title": "WION",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h91/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://d7x8z4yuq42qn.cloudfront.net/index_1.m3u8" },
@@ -738,6 +749,7 @@
   {
     "title": "France24",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h14/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/HvZt-nh9sGg" }
@@ -746,6 +758,7 @@
   {
     "title": "DWTV",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h213/02.m3u8" },
       { "type": "hls", "link": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8" },
@@ -791,6 +804,7 @@
   {
     "title": "Russia Today (RT)",
     "category": "LIVE",
+    "loop": "true",
     "url": [
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h226/02.m3u8" },
       { "type": "hls", "link": "https://rumble.com/live-hls-dvr/33aw1a/playlist.m3u8" }
