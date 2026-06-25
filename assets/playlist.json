@@ -7,6 +7,64 @@
     "url": [ { "link": "assets/1.mp4" }, { "link": "assets/2.mp4" }, { "link": "assets/3.mp4" }, { "link": "assets/4.mp4" } ]
   },
   {
+    "title": "SPOTV",
+    "category": "LIVE",
+    "url": [
+      {
+        "type": "dash",
+        "link": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd",
+        "drm": { "type": "clearkey", "keys": { "ec7ee27d83764e4b845c48cca31c8eef": "9c0e4191203fccb0fde34ee29999129e" } }
+      },
+      {
+        "type": "dash",
+        "link": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd",
+        "referer": "https://www.visionplus.id/",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "drm": { "type": "clearkey", "keys": { "3197f7f5086c4315af2b7a94bc9201cb": "17462a74739ae0d9855705ffc2c0e1b5" } }
+      }
+    ]
+  },
+  {
+    "title": "SPOTV2",
+    "category": "LIVE",
+    "url": [
+      {
+        "type": "dash",
+        "link": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd",
+        "drm": { "type": "clearkey", "keys": { "7eea72d6075245a99ee3255603d58853": "6848ef60575579bf4d415db1032153ed" } }
+      },
+      {
+        "type": "dash",
+        "link": "https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd",
+        "referer": "https://www.visionplus.id/",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "drm": { "type": "clearkey", "keys": { "1539f043249e413d91906036f305831e": "671e24fd8d234c7f38d85055815f902a" } }
+      }
+    ]
+  },
+  {
+    "title": "Red Bull TV",
+    "category": "LIVE",
+    "url": [
+      { "serverName": "Red Bull", "type": "hls", "link": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8" },
+      { "serverName": "Padel", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:e0e6dee0-8c39-4de1-9488-72828468efe0.m3u8" },
+      { "serverName": "Bike", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:ee30c528-32b1-4604-8976-e3bcee4ae7f0.m3u8" },
+      { "serverName": "Adventure", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:870bcfa8-62b1-4e84-9c85-39f083df368a.m3u8" },
+      { "serverName": "Motorsports", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:fd4ed3c9-1800-477b-9909-53255da06632.m3u8" },
+      { "serverName": "Surfing", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:2f6afaec-7ade-4fb8-961a-a51aa8279a99.m3u8" },
+      { "serverName": "Skateboarding", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:5021f46c-6f34-4f51-ba1f-967f2885ac97.m3u8" },
+      { "serverName": "Winter", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:f4aa4fe4-5ce6-4b1c-a60b-abc6f21f16d0.m3u8" },
+      { "serverName": "Action Reel", "type": "hls", "link": "https://play.redbull.com/main/v1/rbtv/en/id/personal_computer/http/rrn:content:video-channels:69a66f02-21fd-42a1-be5b-6965541cfe6a.m3u8" }
+    ]
+  },
+  {
+    "title": "Motorvision",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h09/01.m3u8" }
+    ]
+  },
+  {
     "title": "RCTI",
     "category": "LIVE",
     "url": [
@@ -109,7 +167,7 @@
     "title": "Moji",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "http://op-group1-swiftservehd-1.dens.tv/h/h207/02.m3u8" }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h207/02.m3u8" }
     ]
   },
   {
@@ -143,14 +201,14 @@
     "title": "RTV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h10/01.m3u8" }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h10/01.m3u8" }
     ]
   },
   {
     "title": "MDTV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h223/02.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h223/02.m3u8" },
       {
         "type": "dash",
         "link": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/3aefa03d32954b678e5faab6daa04b58/index.mpd",
@@ -164,7 +222,7 @@
     "title": "Kompas TV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "http://op-group1-swiftservehd-1.dens.tv/h/h234/02.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h234/02.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/DOOrIxw5xOw" }
     ]
   },
@@ -172,7 +230,7 @@
     "title": "Metro TV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h12/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h12/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/AUE5iHINUIw" }
     ]
   },
@@ -180,7 +238,7 @@
     "title": "TVOne",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h40/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h40/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/yNKvkPJl-tg" }
     ]
   },
@@ -188,7 +246,7 @@
     "title": "TVRI Nasional",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s11/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h17/01.m3u8" },
       { "type": "hls", "link": "https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8" }
     ]
   },
@@ -196,7 +254,7 @@
     "title": "TVRI Sport",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s107/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h19/01.m3u8" },
       { "type": "hls", "link": "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8" }
     ]
   },
@@ -206,53 +264,54 @@
     "url": "https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8"
   },
   {
-    "title": "SPOTV",
+    "title": "Bali TV",
+    "category": "LIVE",
+    "type": "embed",
+    "url": "https://player.twitch.tv/?channel=balitvnaradha&parent=localhost&autoplay=true"
+  },
+  {
+    "title": "Garuda TV",
     "category": "LIVE",
     "url": [
-      {
-        "type": "dash",
-        "link": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd",
-        "drm": { "type": "clearkey", "keys": { "ec7ee27d83764e4b845c48cca31c8eef": "9c0e4191203fccb0fde34ee29999129e" } }
-      },
-      {
-        "type": "dash",
-        "link": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd",
-        "referer": "https://www.visionplus.id/",
-        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-        "drm": { "type": "clearkey", "keys": { "3197f7f5086c4315af2b7a94bc9201cb": "17462a74739ae0d9855705ffc2c0e1b5" } }
-      }
+      { "type": "hls", "link": "https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8" }
     ]
   },
   {
-    "title": "SPOTV2",
+    "title": "Magna TV",
     "category": "LIVE",
     "url": [
-      {
-        "type": "dash",
-        "link": "https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd",
-        "drm": { "type": "clearkey", "keys": { "7eea72d6075245a99ee3255603d58853": "6848ef60575579bf4d415db1032153ed" } }
-      },
-      {
-        "type": "dash",
-        "link": "https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd",
-        "referer": "https://www.visionplus.id/",
-        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-        "drm": { "type": "clearkey", "keys": { "1539f043249e413d91906036f305831e": "671e24fd8d234c7f38d85055815f902a" } }
-      }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h24/01.m3u8" },
+      { "type": "hls", "link": "https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8" }
     ]
   },
   {
-    "title": "Redbull TV",
+    "title": "Nusantara TV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8", "ua": "ExoPlayer/2.19.1 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1" }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h37/01.m3u8" },
+      { "type": "hls", "link": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8" }
     ]
   },
   {
-    "title": "Motorvision",
+    "title": "Indonesiana TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://tvstreamcast.com/indonesiana.m3u8"
+  },
+  
+  {
+    "title": "BTV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h09/01.m3u8" }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h210/02.m3u8" },
+      { "type": "hls", "link": "https://lnd0t3b922.tenbytecdn.com/ta-sg1/90369cf5-6ac2-411d-b3d0-15fae10a2e2c/master.m3u8" }
+    ]
+  },
+  {
+    "title": "Beritasatu",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h209/02.m3u8" }
     ]
   },
   {
@@ -270,9 +329,341 @@
     ]
   },
   {
+    "title": "Elshinta TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h228/02.m3u8"
+  },
+  {
+    "title": "Hanacaraka TV",
+    "category": "LIVE",
+    "url": [
+      {
+        "type": "dash",
+        "link": "https://d1vckova5fh9mt.cloudfront.net/out/v1/17c724036c5f4615bd0b8093126b5c44/index.mpd",
+        "referer": "https://www.visionplus.id/",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "drm": { "type": "clearkey", "keys": { "0de1f882d278465abdba73a8b4cb2bda": "7061f5e1115d6ef504726c3faa8bf146" } }
+      }
+    ]
+  },
+  {
+    "title": "RRI NET",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9fca0a54a.m3u8"
+  },
+  {
+    "title": "JTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://63b2dc7196c38.streamlock.net:1937/JTVSURABAYA/_definst_/myStream/playlist.m3u8"
+  },
+  {
+    "title": "JAKTV",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h218/02.m3u8" },
+      { "type": "hls", "link": "https://live-01-digdaya.dens.tv/e6550891-6bef-42e1-bab9-13bf4af739ce/v1/stream.m3u8" }
+    ]
+  },
+  {
+    "title": "Jawa Pos TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://63b2dc7196c38.streamlock.net:1937/JAWAPOSTVSBY/_definst_/myStream/playlist.m3u8"
+  },
+  {
+    "title": "Channel Jowo",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h208/02.m3u8"
+  },
+  {
+    "title": "Stara TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://jakarta.staratv.id/hls/0/stream.m3u8"
+  },
+  {
+    "title": "Sakti TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://saktitv.siar.us/saktitv/live/playlist.m3u8"
+  },
+  {
+    "title": "Dhoho TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8"
+  },
+  {
+    "title": "Jogja TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8"
+  },
+  {
+    "title": "Jogja Istimewa TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://mam.jogjaprov.go.id:1937/tv/jitv_720p/playlist.m3u8"
+  },
+  {
+    "title": "TATV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://tatv.siar.us/tatv/live.sdp/playlist.m3u8"
+  },
+  {
+    "title": "BMSTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8"
+  },
+  {
+    "title": "Duta TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://dutatv.siar.us/dutatv/live/playlist.m3u8"
+  },
+  {
+    "title": "Bungo TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "title": "RCTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://v10.siar.us/rctv/live/playlist.m3u8"
+  },
+  {
+    "title": "Lingkar TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://lingkartv.my.id/hls/lingkartv.m3u8"
+  },
+  {
+    "title": "Balikpapan TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://63b2dc7196c38.streamlock.net:1937/BALIKPAPANTV/_definst_/myStream/playlist.m3u8"
+  },
+  {
+    "title": "Banjar TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://banjartv.siar.us/banjartv/live/playlist.m3u8"
+  },
+  {
+    "title": "Banten TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/bantentv/bantentv/playlist.m3u8"
+  },
+  {
+    "title": "BRTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/brtv/brtv/playlist.m3u8"
+  },
+  {
+    "title": "Evarina TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://live.efarinatv.com/hls/bgtaufikganteng.m3u8"
+  },
+  {
+    "title": "Jupnaz Gizi",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://stream.convergen.co/mbg_stream/smil:mbStream.smil/playlist.m3u8"
+  },
+  {
+    "title": "MGSTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://mgstv.siar.us/live/mgstv.m3u8"
+  },
+  {
+    "title": "Padang TV",
+    "category": "LIVE",
+    "type": "embed",
+    "url": "https://player.twitch.tv/?channel=padang_tv&parent=localhost&autoplay=true"
+  },
+  {
+    "title": "Palembang TV",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/m1hQ307BZpE"
+  },
+  {
+    "title": "TVKU",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://tvku.tv/hlsstream/hls/live.m3u8"
+  },
+  {
+    "title": "DAAI TV",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h16/01.m3u8" },
+      { "type": "hls", "link": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8" }
+    ]
+  },
+  {
+    "title": "Rodja TV",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h233/02.m3u8" },
+      { "type": "hls", "link": "https://rodjatv.com/rodjatv/live.m3u8" }
+    ]
+  },
+  {
+    "title": "TV9 Nusantara",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8"
+  },
+  {
+    "title": "TV Muhammadiyah",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://e.siar.us/live/tvmu.m3u8"
+  },
+  {
+    "title": "Mekkah TV",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h15/01.m3u8" },
+      { "type": "youtube", "link": "https://www.youtube.com/live/m9-Umj3aL1I" }
+    ]
+  },
+  {
+    "title": "Madinah TV",
+    "category": "LIVE",
+    "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h38/01.m3u8" },
+      { "type": "hls", "link": "https://win.holol.com/live/sunnah/chunklist_w1511531636.m3u8" },
+      { "type": "youtube", "link": "https://www.youtube.com/live/BtMUUgApnPs" }
+    ]
+  },
+  {
+    "title": "Iqraa TV",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/TsemrvaJBfw"
+  },
+  {
+    "title": "Ruqyah",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/9riG54_FtF8"
+  },
+  {
+    "title": "MQTV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8"
+  },
+  {
+    "title": "Ahsan TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/ahsantv/ahsantv/playlist.m3u8"
+  },
+  {
+    "title": "Al Wafa Tarim",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://ammedia.siar.us/ammedia/live/playlist.m3u8"
+  },
+  {
+    "title": "Ashiil TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://5bf7b725107e5.streamlock.net/ashiiltv/ashiiltv/playlist.m3u8"
+  },
+  {
+    "title": "Dalwa TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://studioserver.space/live/34e1636543bf7b0a0af5ba8963ad5f14.m3u8"
+  },
+  {
+    "title": "DMI TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://tvstreamcast.com/tawaftv.m3u8"
+  },
+  {
+    "title": "Hijrah TV",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/aBh93JIGRKE"
+  },
+  {
+    "title": "Madani TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://stream.asianastream.com/madani/madanitv.smil/playlist.m3u8"
+  },
+  {
+    "title": "Madu TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://re1.siar.us/madutv/hd720/playlist.m3u8"
+  },
+  {
+    "title": "Salam TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://salamtv.siar.us/live/salamtv.m3u8"
+  },
+  {
+    "title": "Rasyaad TV",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/XiGX2Tl4yNk"
+  },
+  {
+    "title": "Salira TV",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/UijkdSgda_k"
+  },
+  {
+    "title": "Pijar TV",
+    "category": "LIVE",
+    "type": "embed",
+    "url": "https://player.twitch.tv/?channel=pijartv&parent=localhost&autoplay=true"
+  },
+  {
+    "title": "Dhamma TV",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8"
+  },
+  {
+    "title": "Reformed 21",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://youtu.be/Xni-HtTj9-w"
+  },
+  {
+    "title": "U Channel",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://srs.u-channel.tv/live/uchannel-tv.m3u8"
+  },
+  {
     "title": "Al Jazeera",
     "category": "LIVE",
     "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h143/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/gCNeDWCI0vo" }
     ]
@@ -281,6 +672,7 @@
     "title": "Astro Awani",
     "category": "LIVE",
     "url": [
+      { "type": "hls", "link": "https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/index_3.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/mkVyNaGee8A" }
     ]
   },
@@ -288,6 +680,7 @@
     "title": "CNA",
     "category": "LIVE",
     "url": [
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h29/01.m3u8" },
       { "type": "hls", "link": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/XWq5kBlakcQ" }
     ]
@@ -311,15 +704,24 @@
     "title": "NHK World Japan",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h23/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h23/01.m3u8" },
       { "type": "hls", "link": "https://production-nhk-vidio-com.akamaized.net/00489ab02a9d71cc/wXfEzh7gCnHgIYYY/cfc0a62dTe93673d.m3u8" }
+    ]
+  },
+  {
+    "title": "Bloomberg",
+    "category": "LIVE",
+    "url": [
+      { "serverName": "Television", "type": "hls", "link": "https://www.bloomberg.com/media-manifest/streams/phoenix-global.m3u8" },
+      { "serverName": "Originals", "type": "hls", "link": "https://www.bloomberg.com/media-manifest/streams/originals-global.m3u8" },
+      { "serverName": "Radio", "type": "hls", "link": "https://www.bloomberg.com/media-manifest/streams/radio-national-video.m3u8" }
     ]
   },
   {
     "title": "TRT World",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h156/S4/mnf.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h156/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://tv-trtworld.medya.trt.com.tr/master.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/oNUi_iXNPeo" }
     ]
@@ -328,7 +730,7 @@
     "title": "WION",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h91/S4/mnf.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h91/S4/mnf.m3u8" },
       { "type": "hls", "link": "https://d7x8z4yuq42qn.cloudfront.net/index_1.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/vfszY1JYbMc" }
     ]
@@ -337,7 +739,7 @@
     "title": "France24",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s22/01.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h14/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/HvZt-nh9sGg" }
     ]
   },
@@ -345,7 +747,7 @@
     "title": "DWTV",
     "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group2-swiftservesd-1.dens.tv/s/s11/S4/mnf.m3u8" },
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h213/02.m3u8" },
       { "type": "hls", "link": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/LuKwFajn37U" }
     ]
@@ -353,52 +755,52 @@
   {
     "title": "TV5 Monde",
     "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h312/01.m3u8" }
-    ]
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h312/01.m3u8"
+  },
+  {
+    "title": "CGTN",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://english-livebkali.cgtn.com/live/encgtn.m3u8"
   },
   {
     "title": "CGTN Documentary",
     "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h04/01.m3u8"
+  },
+  {
+    "title": "CCTV4",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h22/01.m3u8"
+  },
+  {
+    "title": "TBN Asia",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/s/s39/01.m3u8"
+  },
+  {
+    "title": "AIM",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h232/S4/mnf.m3u8"
+  },
+  {
+    "title": "Russia Today (RT)",
+    "category": "LIVE",
     "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s20/01.m3u8" }
+      { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h226/02.m3u8" },
+      { "type": "hls", "link": "https://rumble.com/live-hls-dvr/33aw1a/playlist.m3u8" }
     ]
   },
   {
-    "title": "Muse Indonesia",
+    "title": "Freedom",
     "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/QPSJTDcs8D8"
-  },
-  {
-    "title": "Detective Conan",
-    "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/c7BJ7Hc9YBA"
-  },
-  {
-    "title": "Larva",
-    "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/dK5ZCBzUf7Y"
-  },
-  {
-    "title": "Shaun The Sheep",
-    "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/j6Mo4ZbQ5Yo"
-  },
-  {
-    "title": "Tom And Jerry",
-    "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/400k2SKoeh4"
-  },
-  {
-    "title": "Doraemon",
-    "category": "LIVE",
-    "type": "youtube",
-    "url": "https://www.youtube.com/live/Se4lirwv38I"
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h101/S4/mnf.m3u8"
   },
   {
     "title": "Musica Studios",
@@ -449,7 +851,7 @@
     "title": "Dance TV",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h250/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h250/02.m3u8"
   },
   {
     "title": "Citra Muslim",
@@ -494,87 +896,6 @@
     "drm": { "type": "clearkey", "keys": { "c263b43be6b94fb682b1d701e0aaf847": "83491ecbe2968e91ed563ce2c41428dc" } }
   },
   {
-    "title": "DAAI TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s182/S4/mnf.m3u8" },
-      { "type": "hls", "link": "https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8" },
-      {
-        "type": "dash",
-        "link": "https://atemecdnbalancer-voe.sysln.id/live/eds/DAAITV/mediampd/DAAITV.mpd",
-        "ua": "ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1",
-        "drm": { "type": "clearkey", "keys": { "dfd7c4f6420843ab9ffb1b8fdda1073a": "d99603a39c300373a2edaf4f048276be" } }
-      }
-    ]
-  },
-  {
-    "title": "Mekkah TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s28/01.m3u8" },
-      { "type": "youtube", "link": "https://www.youtube.com/live/m9-Umj3aL1I" }
-    ]
-  },
-  {
-    "title": "Madinah TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s27/01.m3u8" },
-      { "type": "hls", "link": "https://win.holol.com/live/sunnah/chunklist_w1511531636.m3u8" }
-    ]
-  },
-  {
-    "title": "Rodja TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservesd-1.dens.tv/s/s14/01.m3u8" },
-      { "type": "hls", "link": "https://rodjatv.com/rodjatv/live.m3u8" }
-    ]
-  },
-  {
-    "title": "MQTV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8"
-  },
-  {
-    "title": "Garuda TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8" }
-    ]
-  },
-  {
-    "title": "Magna TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h24/01.m3u8" },
-      { "type": "hls", "link": "https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8" }
-    ]
-  },
-  {
-    "title": "Nusantara TV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h37/01.m3u8" },
-      { "type": "hls", "link": "https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8" }
-    ]
-  },
-  {
-    "title": "BTV",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h210/02.m3u8" }
-    ]
-  },
-  {
-    "title": "Beritasatu",
-    "category": "LIVE",
-    "url": [
-      { "type": "hls", "link": "https://op-group1-swiftservehd-1.dens.tv/h/h209/02.m3u8" }
-    ]
-  },
-  {
     "title": "Biznet Lifestyle",
     "category": "LIVE",
     "type": "dash",
@@ -585,6 +906,51 @@
     "category": "LIVE",
     "type": "dash",
     "url": "http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/manifest.mpd?bizkeylivestarttime=0&bizkeyliveendtime=0&bizkeyliveCustomParameter=myParameter&bizkeylivehash=qAri1M2xu_MAlnHwVRtOs24lR8Y_HSDijN2CRNghifUllhYqQSDlkd0qE8CkZwxC"
+  },
+  {
+    "title": "Muse Indonesia",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/QPSJTDcs8D8"
+  },
+  {
+    "title": "Detective Conan",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/c7BJ7Hc9YBA"
+  },
+  {
+    "title": "Larva",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/dK5ZCBzUf7Y"
+  },
+  {
+    "title": "Shaun The Sheep",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/j6Mo4ZbQ5Yo"
+  },
+  {
+    "title": "Tom And Jerry",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": [
+      { "link": "https://www.youtube.com/live/400k2SKoeh4" },
+      { "link": "https://youtu.be/rEKifG2XUZg" }
+    ]
+  },
+  {
+    "title": "Doraemon",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/Se4lirwv38I"
+  },
+  {
+    "title": "Zaky & Friends",
+    "category": "LIVE",
+    "type": "youtube",
+    "url": "https://www.youtube.com/live/bpvNfqWTXhw"
   },
   {
     "title": "Asian Foods",
@@ -602,25 +968,25 @@
     "title": "Dens Food Channel",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h221/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h221/02.m3u8"
   },
   {
     "title": "Dens Show Biz",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h244/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h244/02.m3u8"
   },
   {
     "title": "Dens Knowledge",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h236/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h236/02.m3u8"
   },
   {
     "title": "Dens Life & Style",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h222/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h222/02.m3u8"
   },
   {
     "title": "Japan Walk",
@@ -632,124 +998,57 @@
     "title": "Crema TV",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h202/02.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h202/02.m3u8"
   },
   {
     "title": "My Cinema Europe",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h18/01.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h18/01.m3u8"
   },
   {
     "title": "Stingray Classica",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h229/S4/mnf.m3u8"
+    "url": "https://op-flashcon-digdayaxenkoda.dens.tv/f7d2390e-69f6-4919-b467-579df454df94/stream.m3u8"
   },
   {
     "title": "Qwest TV",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h153/S4/mnf.m3u8"
+    "url": "https://op-flashcon-digdayaxenkoda.dens.tv/41a80ce3-5acf-4715-a6cf-4ab2b452288b/stream.m3u8"
   },
   {
-    "title": "Elshinta TV",
+    "title": "We Do TV Movies",
     "category": "LIVE",
     "type": "hls",
-    "url": "https://op-group2-swiftservesd-1.dens.tv/s/s12/S4/mnf.m3u8"
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h70/wedotv_movie.m3u8"
   },
   {
-    "title": "Hanacaraka TV",
+    "title": "We Do TV Amor",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h68/wedotv_amor.m3u8"
+  },
+  {
+    "title": "We Do TV Big Stories",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h69/wedotv_big_stories.m3u8"
+  },
+  {
+    "title": "We Do TV Sports",
+    "category": "LIVE",
+    "type": "hls",
+    "url": "https://op-flashcon-digdayahd-1.dens.tv/h/h71/wedo_sport.m3u8"
+  },
+  {
+    "title": "Love Nature",
     "category": "LIVE",
     "url": [
-      {
-        "type": "dash",
-        "link": "https://d1vckova5fh9mt.cloudfront.net/out/v1/17c724036c5f4615bd0b8093126b5c44/index.mpd",
-        "referer": "https://www.visionplus.id/",
-        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-        "drm": { "type": "clearkey", "keys": { "0de1f882d278465abdba73a8b4cb2bda": "7061f5e1115d6ef504726c3faa8bf146" } }
-      }
+      { "type": "youtube", "link": "https://www.youtube.com/live/QhahoVG0BfI" },
+      { "type": "youtube", "link": "https://www.youtube.com/live/7ByKk5NPsRw" }
     ]
-  },
-  {
-    "title": "JAKTV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://live-01-digdaya.dens.tv/e6550891-6bef-42e1-bab9-13bf4af739ce/v1/stream.m3u8"
-  },
-  {
-    "title": "Channel Jowo",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://op-group1-swiftservehd-1.dens.tv/h/h208/02.m3u8"
-  },
-  {
-    "title": "Stara TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://jakarta.staratv.id/hls/0/stream.m3u8"
-  },
-  {
-    "title": "Sakti TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://saktitv.siar.us/saktitv/live/playlist.m3u8"
-  },
-  {
-    "title": "Jogja TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8",
-    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
-  },
-  {
-    "title": "Dhoho TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://dhohotv.siar.us/dhohotv/live/playlist.m3u8"
-  },
-  {
-    "title": "TATV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://tatv.siar.us/tatv/live.sdp/playlist.m3u8"
-  },
-  {
-    "title": "BMSTV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8"
-  },
-  {
-    "title": "Duta TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://dutatv.siar.us/dutatv/live/playlist.m3u8"
-  },
-  {
-    "title": "Dhamma TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8"
-  },
-  {
-    "title": "Bungo TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8",
-    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
-  },
-  {
-    "title": "RCTV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://v10.siar.us/rctv/live/playlist.m3u8"
-  },
-  {
-    "title": "Lingkar TV",
-    "category": "LIVE",
-    "type": "hls",
-    "url": "https://lingkartv.my.id/hls/lingkartv.m3u8"
   },
   {
     "title": "Bioskop Indonesia",
@@ -1899,7 +2198,8 @@
       { "epName": "51", "url": "https://youtu.be/nhTsjDYFP8I" },
       { "epName": "52", "url": "https://youtu.be/U986_C7kRs8" },
       { "epName": "53", "url": "https://youtu.be/yIJCX58qFb8" },
-      { "epName": "54", "url": "https://youtu.be/mHU60CnHtVI" }
+      { "epName": "54", "url": "https://youtu.be/mHU60CnHtVI" },
+      { "epName": "55", "url": "https://youtu.be/hRQ3Tc7eB9c" }
     ]
   },
   {
