@@ -154,27 +154,28 @@
   {
     "title": "SCTV",
     "category": "LIVE",
-    "type": "direct",
-    "url": "https://donasi.showcdnx.com/stopjudi/2.mp4"
+    "type": "dash",
+    "url": "https://tvratu.my.id/nissa/index.mpd?id=204&type=dash"
   },
   {
     "title": "Indosiar",
     "category": "LIVE",
-    "type": "direct",
-    "url": "https://donasi.showcdnx.com/stopjudi/3.mp4"
+    "type": "dash",
+    "url": "https://tvratu.my.id/nissa/index.mpd?id=205&type=dash"
   },
   {
     "title": "Moji",
     "category": "LIVE",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=206&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h207/02.m3u8" }
     ]
   },
   {
     "title": "Mentari TV",
     "category": "LIVE",
-    "type": "direct",
     "url": [
+      { "type",: "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=8237&type=dash" },
       {
         "type": "dash",
         "link": "https://d84q7nw4qf3j3.cloudfront.net/out/v1/703a71abac3844748b1e68166242d4f3/index.mpd",
@@ -188,6 +189,7 @@
     "title": "ANTV",
     "category": "LIVE",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=782&type=dash" },
       {
         "type": "dash",
         "link": "https://d84q7nw4qf3j3.cloudfront.net/out/v1/0a6c6b1534444ab4bd903af8761e6747/index.mpd",
@@ -201,6 +203,7 @@
     "title": "RTV",
     "category": "LIVE",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=1561&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h10/01.m3u8" }
     ]
   },
@@ -208,6 +211,7 @@
     "title": "MDTV",
     "category": "LIVE",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=875&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h223/02.m3u8" },
       {
         "type": "dash",
@@ -223,6 +227,7 @@
     "category": "LIVE",
     "loop": "true",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=874&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h234/02.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/DOOrIxw5xOw" }
     ]
@@ -232,6 +237,7 @@
     "category": "LIVE",
     "loop": "true",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=777&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h12/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/AUE5iHINUIw" }
     ]
@@ -241,6 +247,7 @@
     "category": "LIVE",
     "loop": "true",
     "url": [
+      { "type": "dash", "link": "https://tvratu.my.id/nissa/index.mpd?id=783&type=dash" },
       { "type": "hls", "link": "https://op-flashcon-digdayahd-1.dens.tv/h/h40/01.m3u8" },
       { "type": "youtube", "link": "https://www.youtube.com/live/yNKvkPJl-tg" }
     ]
